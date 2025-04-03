@@ -2,7 +2,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Carousel from "nuka-carousel";
+import {Carousel} from "nuka-carousel";
 
 export default function HeroCarousel({ banners }) {
   const config = {

@@ -68,12 +68,14 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--border); /* Use the CSS variable directly */
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background); /* Use the CSS variable directly */
+    color: var(--foreground); /* Use the CSS variable directly */
   }
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

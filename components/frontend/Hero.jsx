@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import HeroCarousel from "./HeroCarousel";
-import advert from "../../public/adv.gif";
+// import advert from "../../public/adv.gif";
 import { CircleDollarSign, FolderSync, HelpCircle } from "lucide-react";
 import SidebarCategories from "./SidebarCategories";
 import { getData } from "@/lib/getData";
@@ -41,7 +41,7 @@ export default async function Hero() {
           </div>
         </Link>
 
-        <Image src={advert} alt="advert" className="w-full rounded-lg" />
+        {/* <Image src={advert} alt="advert" className="w-full rounded-lg" /> */}
       </div>
     </div>
   );
