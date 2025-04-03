@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 import { withUt } from "uploadthing/tw";
+
 export default withUt({
-  darkMode: ["class"],
+  darkMode: ["class"], // Enable dark mode based on class
   content: [
     "./node_modules/flowbite-react/**/*.js",
     "./pages/**/*.{js,jsx}",
@@ -19,7 +20,7 @@ export default withUt({
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
+        border: "hsl(var(--border))", // Reference the --border CSS variable
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -52,6 +53,9 @@ export default withUt({
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      borderColor: {
+        border: "hsl(var(--border))", // Ensure this matches the --border CSS variable
       },
       borderRadius: {
         lg: "var(--radius)",
